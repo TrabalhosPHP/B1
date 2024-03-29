@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/cad.css" />
+  <title>Cadastro</title>
+  <script src="../src/js/script.js"></script>
+</head>
+
+<body>
+  <section class="cadastro">
+    <div class="logo">
+      <div class="titulo">
+        <h1>INFORMAÇÕES</h1>
+      </div>
+      <form action="../src/cadastroUsuario.php" method="POST" onsubmit="return validarForm()">
+        <input type="text" name="cpf" id="cpf" placeholder="CPF" required />
+        <input type="text" name="nome" id="nome" placeholder="Nome" required />
+        <input type="text" name="sobrenome" id="" placeholder="Sobrenome" required />
+        <input type="email" name="email" id="" placeholder="@exemplo.com" required />
+        <input type="password" name="senha" id="senha" placeholder="Senha" required />
+        <input class="bnt" type="submit" value="Cadastrar" required />
+      </form>
+    </div>
+  </section>
+
+ 
+</body>
+
+</html>

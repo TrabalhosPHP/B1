@@ -1,0 +1,110 @@
+:root {
+    --cor-fundo: #808080;
+    --cor-primaria: rgba(0, 0, 255, 0.486);
+    --cor-primaria-2: #00808091;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+body,
+html {
+    background-color: var(--cor-fundo);
+    background-image: url(../img/Bunner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.header {
+    background-color: var(--cor-primaria);
+}
+
+.header ul {
+    list-style-type: none;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+}
+
+.header li {
+    float: left;
+}
+
+.header li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.header li a:hover {
+    background-color: var(--cor-primaria);
+}
+
+.cad {
+    float: right;
+}
+
+.login {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid;
+    background-image: transparent;
+    backdrop-filter: blur(10px);
+    width: 400px;
+    height: 500;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.logo form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.logo input {
+    margin-top: 10px;
+    border: none;
+    height: 45px;
+    outline: none;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.logo img {
+    width: 200px;
+    height: auto;
+}
+
+input::placeholder {
+    color: #474747;
+    font-size: 14px;
+}
+
+.bnt {
+    display: block;
+    font-size: 20px;
+    text-transform: uppercase;
+}
